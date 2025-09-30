@@ -15,9 +15,14 @@ namespace OOPHotel2._0.Persons
         public decimal Salary { get; set; } 
 
 
-        public void PrintInfo()
+        //public void PrintInfo()
+        //{
+        //    Console.WriteLine($"Namn: {Name}\nÅlder: {Age}");
+        //}
+
+        public virtual void PrintInfo()
         {
-            Console.WriteLine($"Namn: {Name}\nÅlder: {Age}");
+            Console.WriteLine($"Namn: {Name}\nÅlder: {Age}\nAnställnings-ID: {EmployeeId}\nStartdatum: {StartDate}\nSalary: {Salary}");
         }
 
         public virtual void Introduce() {}    
