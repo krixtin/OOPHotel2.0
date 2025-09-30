@@ -31,5 +31,12 @@ namespace OOPHotel2._0.Persons
             Console.WriteLine($"Hej jag heter {Name} och är {Age} år gammal. Jag arbetar som Manager.");
         }
 
+
+        public void PlanBudget()
+        {
+            Console.WriteLine($"{Name} planerar hotellets budget.");
+
+        }
+
     }
 }

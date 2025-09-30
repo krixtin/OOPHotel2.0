@@ -20,6 +20,10 @@ namespace OOPHotel2._0.Persons.Consultants
 
         public string Expertise { get; set; }
 
+        public override void Work()
+        {
+            Console.WriteLine($"Konsulten {Name} tillhandahåller hotellet sina tjänster inom {Expertise}.");
+        }
 
     }
 }
