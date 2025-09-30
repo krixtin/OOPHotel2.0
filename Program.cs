@@ -7,6 +7,10 @@ namespace OOPHotel2._0
     {
         static void Main(string[] args)
         {
+            Manager manager = new Manager 
+            { }
+            
+            
             Consultant consultant1 = new Consultant
             {
                 Name = "Eva Expert",
