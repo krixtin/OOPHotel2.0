@@ -15,12 +15,12 @@ namespace OOPHotel2._0
                     
             //Register över hotellpersonal
             List<Person> hotelStaff = new List<Person>();
-
-            hotelStaff.Add(consultant1);
+           
             hotelStaff.Add(employee1);
             hotelStaff.Add(new Manager("Matilda Beckström",55, "M002",new DateOnly(2015,09,12), 55000, "Ledning"));
             hotelStaff.Add(new Houskeeping("Sandra Forslund",32,"E005",new DateOnly(2022,04,24),22000,"Rumsstädare","Hotelstädare"));
             hotelStaff.Add(new Employee("Fatima Asgari", 27, "E006", new DateOnly(2023, 07, 05), 25000, "Receptionist", "Front desk"));
+            hotelStaff.Add(new Consultant("Eva Expert", 48, "C001", new DateOnly(2023, 07, 22), 45000, 1500, "Hotel Consultants Corp.", "Ledning"));
 
             //SKriv ut information om hotellpersonal
 
@@ -51,23 +51,11 @@ namespace OOPHotel2._0
                          
             
             DateOnly managerStartDate = new DateOnly(2025, 03, 19);
-            Manager manager = new Manager("Aldor", 67, "CCAA", managerStartDate, 40000, "Chefer");
+            Manager manager1 = new Manager("Aldor", 67, "CCAA", managerStartDate, 40000, "Chefer");
 
-            manager.PrintInfo();
-            manager.Introduce();
-            manager.HoldMeeting();
-
-            Console.WriteLine();
-
-            DateOnly consultantStartDate = new DateOnly(2025, 04, 30);
-            Consultant consultant1 = new Consultant("Eva Expert", 48, "C001", consultantStartDate, 45000, 1500, "Hotel Consultants Corp.", "Ledning");
-            
-            Console.WriteLine("Konsult:");
-            consultant1.PrintInfo();
-            consultant1.Introduce();
-            consultant1.GiveAdvice();
-
-            Console.WriteLine();
+            manager1.PrintInfo();
+            manager1.Introduce();
+            manager1.HoldMeeting();
 
             DateOnly houskeeper1StartDate = new DateOnly(2025, 03, 20);
 
