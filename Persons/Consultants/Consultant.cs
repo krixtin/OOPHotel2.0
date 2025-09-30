@@ -14,9 +14,9 @@ namespace OOPHotel2._0.Persons.Consultants
             Console.WriteLine($"{Name}s expertområde är att {Expertise}");
         }
 
-        public virtual void PrintInfo()
+        public override void PrintInfo()
         {
-            Console.WriteLine($"Namn: {Name}\nÅlder: {Age}\nAnställnings-ID: {EmployeeId}\nStartdatum: {StartDate}\nSalary: {Salary}");
+            Console.WriteLine($"Namn: {Name}\nÅlder: {Age}\nAnställnings-ID: {EmployeeId}\nStartdatum: {StartDate}\nLön: {Salary}\nTimpenning: {HourlyRate}\nKonsultfirma: {ConsultingFirm}\nExpertis: {Expertise}");
         }
 
         public double HourlyRate { get; set; }
@@ -25,9 +25,14 @@ namespace OOPHotel2._0.Persons.Consultants
 
         public string Expertise { get; set; }
 
-        public Consultant()
+        public Consultant(string name, int age, string employeeId, DateOnly startDate, int salary, double hourlyRate, string consultingFirm, string expertise)
         {
-
+            Name = name;
+            Age = age;
+            EmployeeId = employeeId;
+            StartDate = startDate;
+            Salary = salary;
+            HourlyRate = hourlyRate; 
         }
     }
 }
