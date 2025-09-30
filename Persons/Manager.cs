@@ -11,13 +11,15 @@ namespace OOPHotel2._0.Persons
         string Department { get; set; }
 
 
-        public Manager(string name, int age, string employeeId, DateOnly startDate, Decimal salary) 
+        public Manager(string name, int age, string employeeId, DateOnly startDate, Decimal salary, string department) 
         {
             Name = name;
             Age = age;
             EmployeeId = employeeId;
             StartDate = startDate;
             Salary = salary;
+            Department = department;
+
         }
 
         public void HoldMeeting() 
