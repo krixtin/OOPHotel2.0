@@ -38,6 +38,8 @@ namespace OOPHotel2._0.Persons.Consultants
             StartDate = startDate;
             Salary = salary;
             HourlyRate = hourlyRate; 
+            ConsultingFirm = consultingFirm;
+            Expertise = expertise;
         }
     }
 }
