@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace OOPHotel2._0.Persons.Consultants
 {
-    internal class Consultant
+    internal class Consultant : Person
     {
+        public void GiveAdvice()
+        {
+            Console.WriteLine($"{Name} ger råd till hotellet om hur de kan förbättra sina rutiner.");
+        }
+
+        public double HourlyRate { get; set; }
+
+        public string ConsultingFirm { get; set; }
+
+
     }
 }
