@@ -22,9 +22,11 @@ namespace OOPHotel2._0.Persons.Employees
         public override void Work()
         {
             Console.WriteLine($"{Name} städar hotellet.");
-
         }
 
-
+        public virtual void PrintInfo()
+        {
+            Console.WriteLine($"Namn: {Name}\nÅlder: {Age}\nAnställnings-ID: {EmployeeId}\nStartdatum: {StartDate}\nLön: {Salary}\nAvdelning: {Department}");
+        }
     }
 }

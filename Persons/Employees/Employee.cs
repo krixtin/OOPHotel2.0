@@ -30,8 +30,12 @@ namespace OOPHotel2._0.Persons.Employees
             {
                 Console.WriteLine($"{Name} arbetar som {JobTitle} på {Department}.");
 
-            }
+        }
+        
+        public virtual void PrintInfo()
+        {
+            Console.WriteLine($"Namn: {Name}\nÅlder: {Age}\nAnställnings-ID: {EmployeeId}\nStartdatum: {StartDate}\nLön: {Salary}\nAvdelning: {Department}");
+        }
 
-
-    }
+}
 }
