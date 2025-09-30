@@ -19,7 +19,6 @@ namespace OOPHotel2._0.Persons
             StartDate = startDate;
             Salary = salary;
             Department = department;
-
         }
 
         public void HoldMeeting() 
@@ -31,6 +30,18 @@ namespace OOPHotel2._0.Persons
         public override void Introduce() 
         {
             Console.WriteLine($"Hej jag heter {Name} och är {Age} år gammal. Jag arbetar som Manager.");
+        }
+
+        public virtual void PrintInfo()
+        {
+            Console.WriteLine($"Namn: {Name}\nÅlder: {Age}\nAnställnings-ID: {EmployeeId}\nStartdatum: {StartDate}\nLön: {Salary}\nAvdelning: {Department}");
+        }
+
+
+        public void PlanBudget()
+        {
+            Console.WriteLine($"{Name} planerar hotellets budget.");
+
         }
 
     }

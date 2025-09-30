@@ -24,15 +24,18 @@ namespace OOPHotel2._0.Persons.Employees
         public override void Introduce() 
         {
             Console.WriteLine($"Hej, jag heter {Name} och är {Age} år gammal. Jag jobbar på OOP Hotel.");
-        
         }
 
-        public virtual void Work()
+        public override void Work()
             {
                 Console.WriteLine($"{Name} arbetar som {JobTitle} på {Department}.");
 
-            }
+        }
+        
+        public virtual void PrintInfo()
+        {
+            Console.WriteLine($"Namn: {Name}\nÅlder: {Age}\nAnställnings-ID: {EmployeeId}\nStartdatum: {StartDate}\nLön: {Salary}\nAvdelning: {Department}");
+        }
 
-
-    }
+}
 }
