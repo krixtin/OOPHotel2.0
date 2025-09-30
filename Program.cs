@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography;
 using OOPHotel2._0.Persons.Consultants;
+using OOPHotel2._0.Persons.Employees;
 using OOPHotel2._0.Persons;
 
 namespace OOPHotel2._0
@@ -16,9 +17,9 @@ namespace OOPHotel2._0
             manager.PrintInfo();
             manager.Introduce();
             manager.HoldMeeting();
-            
-            
-            
+
+
+
             Consultant consultant1 = new Consultant
             {
                 Name = "Eva Expert",
@@ -27,7 +28,7 @@ namespace OOPHotel2._0
                 StartDate = new DateOnly(2025, 04, 30),
                 Salary = 0,
                 HourlyRate = 1500,
-                ConsultingFirm = "Hotel Consultants corp."
+                ConsultingFirm = "Hotel Consultants corp.",
             };
 
             Console.WriteLine("Konsult:");
@@ -36,6 +37,14 @@ namespace OOPHotel2._0
             consultant1.GiveAdvice();
             Console.WriteLine($"Timlön: {consultant1.HourlyRate} kr");
             Console.WriteLine($"Konsultfirm: {consultant1.ConsultingFirm}");
+
+            DateOnly houskeeper1StartDate = new DateOnly(2025, 03, 20);
+
+            Houskeeping houskeeper1 = new Houskeeping("Pelle", 43, "E001", houskeeper1StartDate, 30000, "städare", "lokalvård");
+
+            houskeeper1.PrintInfo();
+            houskeeper1.Introduce();
+            houskeeper1.Work();
 
         }
     }
