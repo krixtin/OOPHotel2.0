@@ -24,7 +24,6 @@ namespace OOPHotel2._0.Persons.Employees
         public override void Introduce() 
         {
             Console.WriteLine($"Hej, jag heter {Name} och är {Age} år gammal. Jag jobbar på OOP Hotel.");
-        
         }
 
         public virtual void Work()

@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography;
+using OOPHotel2._0.Persons;
 using OOPHotel2._0.Persons.Consultants;
 
 namespace OOPHotel2._0
@@ -24,6 +25,8 @@ namespace OOPHotel2._0
             consultant1.GiveAdvice();
             Console.WriteLine($"Timlön: {consultant1.HourlyRate} kr");
             Console.WriteLine($"Konsultfirm: {consultant1.ConsultingFirm}");
+
+            Manager manager = new Manager();
 
         }
     }
