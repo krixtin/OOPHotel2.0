@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPHotel2._0.Persons
+namespace OOPHotel2._0.Persons.Manager
 {
     internal class Manager : Person
     {
