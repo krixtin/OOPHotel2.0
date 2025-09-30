@@ -11,7 +11,7 @@ namespace OOPHotel2._0.Persons.Consultants
         public void GiveAdvice()
         {
             Console.WriteLine($"{Name} ger råd till hotellet om hur de kan förbättra sina rutiner.");
-            Console.WriteLine($"{Name}s expertområde är att {Expertise}");
+            Console.WriteLine($"{Name}s expertområde är att {Expertise}.");
         }
 
         public override void PrintInfo()
