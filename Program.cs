@@ -38,6 +38,8 @@ namespace OOPHotel2._0
             Console.WriteLine($"Timlön: {consultant1.HourlyRate} kr");
             Console.WriteLine($"Konsultfirm: {consultant1.ConsultingFirm}");
 
+            Console.WriteLine();
+
             DateOnly houskeeper1StartDate = new DateOnly(2025, 03, 20);
 
             Houskeeping houskeeper1 = new Houskeeping("Pelle", 43, "E001", houskeeper1StartDate, 30000, "städare", "lokalvård");

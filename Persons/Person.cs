@@ -25,7 +25,9 @@ namespace OOPHotel2._0.Persons
             Console.WriteLine($"Namn: {Name}\nÅlder: {Age}\nAnställnings-ID: {EmployeeId}\nStartdatum: {StartDate}\nSalary: {Salary}");
         }
 
-        public virtual void Introduce() {}    
+        public virtual void Introduce() {}
+
+        public virtual void Work() {}
 
     }
 }
