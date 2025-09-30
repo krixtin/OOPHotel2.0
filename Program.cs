@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography;
 using OOPHotel2._0.Persons.Consultants;
+using OOPHotel2._0.Persons;
 
 namespace OOPHotel2._0
 {
@@ -7,7 +8,14 @@ namespace OOPHotel2._0
     {
         static void Main(string[] args)
         {
-            Manager manager = new Manager
+            
+            
+            DateOnly managerStartDate = new DateOnly(2025, 03, 19);
+            Manager manager = new Manager("Aldor", 67, "CCAA", managerStartDate, 40000);
+
+            manager.PrintInfo();
+            manager.Introduce();
+            manager.HoldMeeting();
             
             
             
