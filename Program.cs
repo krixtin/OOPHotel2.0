@@ -18,7 +18,7 @@ namespace OOPHotel2._0
             manager.Introduce();
             manager.HoldMeeting();
 
-
+            Console.WriteLine();
 
             Consultant consultant1 = new Consultant
             {
@@ -30,7 +30,7 @@ namespace OOPHotel2._0
                 HourlyRate = 1500,
                 ConsultingFirm = "Hotel Consultants corp.",
             };
-
+            
             Console.WriteLine("Konsult:");
             consultant1.PrintInfo();
             consultant1.Introduce();
