@@ -46,25 +46,9 @@ namespace OOPHotel2._0
                 //{
                 //    housekeeper.Work();
                 //}
-                Console.WriteLine();
             }
                          
             
-            DateOnly managerStartDate = new DateOnly(2025, 03, 19);
-            Manager manager1 = new Manager("Aldor", 67, "CCAA", managerStartDate, 40000, "Chefer");
-
-            manager1.PrintInfo();
-            manager1.Introduce();
-            manager1.HoldMeeting();
-
-            DateOnly houskeeper1StartDate = new DateOnly(2025, 03, 20);
-
-            Houskeeping houskeeper1 = new Houskeeping("Pelle", 43, "E001", houskeeper1StartDate, 30000, "städare", "lokalvård");
-
-            houskeeper1.PrintInfo();
-            houskeeper1.Introduce();
-            houskeeper1.Work();
-
         }
 
 
